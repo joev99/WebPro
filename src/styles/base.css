@@ -1,0 +1,117 @@
+/*-------------------
+  Variables
+---------------------------------*/
+
+:root {
+  --violet: #5964e0;
+  --violet-light: #939bf4;
+  --blue-very-dark: #19202d;
+  --midnight: #121721;
+  --white: #fff;
+  --gray: #9daec2;
+  --gray-light: #f4f6f8;
+  --gray-dark: #6e8098;
+}
+
+/*-------------------
+  Global
+---------------------------------*/
+html {
+  font-size: 62.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  padding: 1.6rem 3.65rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-violet {
+  background-color: var(--violet);
+  color: var(--white);
+  transition: all 0.4s;
+}
+
+.btn-violet:hover {
+  background-color: var(--violet-light);
+}
+
+.btn-lg {
+  padding: 2.4rem 6rem;
+}
+
+.mb-md {
+  margin-bottom: 1.6rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.6rem;
+}
+
+.body-bg-light {
+  background-color: var(--gray-light);
+}
+
+.body-bg-dark {
+  background-color: var(--midnight);
+}
+
+.bg-light {
+  background-color: var(--white);
+}
+
+.bg-dark {
+  background-color: var(--blue-very-dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.not-found {
+  text-align: center;
+  color: var(--violet);
+  margin-top: 10rem;
+}
+
+.loading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--violet);
+}
+
+@import "./App.css";
+@import "./Header.css";
+@import "./Home.css";
+@import "./Search.css";
+@import "./Jobs.css";
+@import "./Job.css";
+@import "./JobDetails.css";

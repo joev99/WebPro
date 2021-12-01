@@ -1,0 +1,19 @@
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem 3rem;
+  padding-bottom: 8rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .jobs-container {
+    grid-template-columns: 1fr;
+  }
+}
